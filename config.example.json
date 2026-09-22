@@ -1,0 +1,53 @@
+{
+    "qase": {
+        "api_token": "<QASE_API_TOKEN>",
+        "host": "qase.io",
+        "ssl": true,
+        "scim_token": ""
+    },
+    "zephyr": {
+        "host": "<ZEPHYR_ENTERPRISE_BASE_URL>",
+        "api_token": "<ZEPHYR_ENTERPRISE_API_TOKEN>",
+        "auth": "bearer",
+        "username": "",
+        "password": "",
+        "deduplicate_cases": true
+    },
+    "projects": {
+        "import_all": false,
+        "import": [
+            "<ZEPHYR_PROJECT_NAME>"
+        ],
+        "exclude": [],
+        "mapping": {}
+    },
+    "users": {
+        "default": "<QASE_USER_EMAIL_OR_ID>",
+        "map": {},
+        "migrate": true,
+        "create": false,
+        "only_active": true
+    },
+    "groups": {
+        "create": false,
+        "name": "Zephyr Migration",
+        "name_prefix": "",
+        "from_user_group_sets": true
+    },
+    "cases": {
+        "preserve_ids": true,
+        "fields": [],
+        "priority_map": {},
+        "status_map": {}
+    },
+    "runs": {
+        "created_after": 0,
+        "status_map": {}
+    },
+    "logging": {
+        "level": "info",
+        "write_to_file": true,
+        "dir": "./logs"
+    },
+    "prefix": ""
+}

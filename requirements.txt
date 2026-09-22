@@ -1,0 +1,9 @@
+qaseio>=4.0.1
+certifi
+requests
+urllib3
+
+# Statistics workbook (stats/*.xlsx). openpyxl is not imported directly, it is
+# the engine pandas writes the workbook with.
+pandas
+openpyxl
